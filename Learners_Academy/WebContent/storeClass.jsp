@@ -44,6 +44,10 @@
            System.out.println(teacher);
            System.out.println(student);
            
+           if("Insert".equals(request.getParameter("submit")))
+           {
+        	   
+        	   System.out.println("Inside Insert method");
          int res =   SetDetails.setClassData(classs, student, subject, teacher);
 
          if(res==1)
@@ -58,11 +62,36 @@
          {
 
    %>
-   	<h2 style="text-align: center; color: red">Data already stored for this class</h2>
+   	<h2 style="text-align: center; color: red">Data not stored for this class</h2>
    <%
    request.getRequestDispatcher("setClass.jsp").include(request, response);
          }
-         
+           }
+           
+           if("Update".equals(request.getParameter("submit")))
+           {
+
+        	   System.out.println("Inside Update method");
+        	   
+        	   int res =   SetDetails.updateClassData(classs, student, subject, teacher);
+
+               if(res==1)
+               {
+         %>
+         	<h2 style="text-align: center; color: green">Data updated
+         		successfully</h2>
+         	<%
+             	  request.getRequestDispatcher("setClass.jsp").include(request, response);
+               }
+               else
+               {
+
+         %>
+         	<h2 style="text-align: center; color: red">Data not updated for this class</h2>
+         <%
+         request.getRequestDispatcher("setClass.jsp").include(request, response);
+               }
+           }
    %>
 </body>
 </html>

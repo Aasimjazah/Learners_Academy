@@ -7,6 +7,7 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.query.Query;
 
 import com.entity.Classs;
 import com.entity.Student;
@@ -84,6 +85,29 @@ public class SetDetails
 	     session.save(c); 
 	     t.commit();
 	     session.close();
+	     
+		
+		return 1;
+	}
+	
+	public static int updateClassData(String name,List<Student> students, List<Subject> subjects, List<Teacher> teachers)
+	{
+		
+		
+		Classs c = new Classs(name, students, subjects, teachers);
+		
+		 SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+	      Session session = sessionFactory.openSession();
+		
+	     
+	      Transaction t = session.beginTransaction();
+          
+          session.update(c);
+         
+   t.commit();
+   
+   session.close();
+
 	     
 		
 		return 1;

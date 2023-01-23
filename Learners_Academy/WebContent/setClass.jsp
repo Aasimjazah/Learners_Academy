@@ -82,7 +82,12 @@
  %>
 			</select> <br> <br> <input
 				style="font-size: 30px; margin-left: 10%; margin-bottom: 2%"
-				type="submit" value="Submit">
+				type="submit" value="Insert" name="submit">
+				
+				<input
+				style="font-size: 30px; margin-left: 10%; margin-bottom: 2%"
+				type="Submit" value="Update" name="submit">
+				
 		</form>
 	</div>
 </body>

@@ -21,8 +21,7 @@
 </head>
 <body bgcolor="#E7BFB7">
 
-	<div
-		style="margin-left: 27%; border: 3px solid black; width: 50%; margin-top: 10%; border-radius: 5px;">
+	<div style="margin-left: 27%; border: 3px solid black; width: 50%; margin-top: 10%; border-radius: 5px;">
 		<h1 style="margin-left: 10%">Welcome to Learner's Academy Admin
 			Portal</h1>
 
@@ -69,6 +68,30 @@
 			<a style="text-decoration: none" href="getAllDatas.jsp" /a> Get
 				All Data 
 		</button>
+		
+
+	</div>
+	
+	<div style="margin-left: 27%; border: 3px solid black; width: 50%; margin-top: 10%; border-radius: 5px;">
+		<h1 style="margin-left: 10%">Delete data</h1>
+
+		<button class="GFG">
+			<a style="text-decoration: none" href="deleteStudent.jsp" /a>
+				Delete Student
+		</button>
+
+		<button class="GFG">
+			<a style="text-decoration: none" href="deleteSubject.jsp" /a> 
+				Delete Subject 
+		</button>
+
+
+		<button class="GFG">
+			<a style="text-decoration: none" href="deleteTeacher.jsp" /a> Set
+				Delete Teacher 
+		</button>
+
+
 		
 
 	</div>
