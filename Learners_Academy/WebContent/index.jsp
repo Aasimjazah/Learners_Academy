@@ -49,9 +49,27 @@
 		</button>
 		<br>
 		<button class="GFG">
-			<a style="text-decoration: none" href="getStudent.jsp" /a> Get
-				Student 
+			<a style="text-decoration: none" href="getAllStudent.jsp" /a> Get
+				All Student 
 		</button>
+		
+		<button class="GFG">
+			<a style="text-decoration: none" href="getAllSubject.jsp" /a> Get
+				All Subjects 
+		</button>
+		
+		<button class="GFG">
+			<a style="text-decoration: none" href="getAllTeacher.jsp" /a> Get
+				All Teachers 
+		</button>
+		
+		<br>
+		
+		<button style="position:relative; margin-left:40%;" class="GFG">
+			<a style="text-decoration: none" href="getAllData.jsp" /a> Get
+				All Teachers 
+		</button>
+		
 
 	</div>
 </body>

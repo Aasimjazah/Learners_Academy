@@ -99,6 +99,14 @@ public class GetDetails
 		     session.close();
 		return null;
 	}
+	
+	public static Classs getAllData()
+	{
+		
+		
+		
+		return null;
+	}
 
 
 }

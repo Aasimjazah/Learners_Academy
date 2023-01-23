@@ -48,8 +48,21 @@
 
          if(res==1)
          {
-        	 System.out.println("Data Stored successfully");
+   %>
+   	<h2 style="text-align: center; color: green">Data Store
+   		successfully</h2>
+   	<%
+       	  request.getRequestDispatcher("setClass.jsp").include(request, response);
          }
-%>
+         else
+         {
+
+   %>
+   	<h2 style="text-align: center; color: red">Data already stored for this class</h2>
+   <%
+   request.getRequestDispatcher("setClass.jsp").include(request, response);
+         }
+         
+   %>
 </body>
 </html>
