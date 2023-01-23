@@ -76,7 +76,7 @@ public class Classs
 
 	@Override
 	public String toString() {
-		return "Classs [className=" + className + ", student=" + student + ", subject=" + subject + ", teacher="
+		return "Classs [className=" + className + "\n, student=" + student + ", subject=" + subject + ", teacher="
 				+ teacher + "]";
 	}
 	

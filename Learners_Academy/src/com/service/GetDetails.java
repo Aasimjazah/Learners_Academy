@@ -83,11 +83,29 @@ public class GetDetails
 	 
 	}
 	
-	public static List<Student> getStudent()
+	public static List<Classs> getStudent()
 	{
 		  SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 	      Session session = sessionFactory.openSession();
+	   //   System.out.println("Session opened");
 	      List<Classs> clas =  session.createQuery("from Classs").list();  
+		   System.out.println("Query executed");
+	      for(Classs stu: clas)
+	      {
+	    	  System.out.println("Data"+stu);
+	      }
+	      Transaction t = session.beginTransaction(); 
+		   
+		     t.commit();
+		     session.close();
+		return clas;
+	}
+	
+	public static List<Classs> getAllData()
+	{
+		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+	      Session session = sessionFactory.openSession();
+	      List<Classs> clas = session.createQuery("from Classs").list();  
 		   
 	      for(Classs stu: clas)
 	      {
@@ -97,15 +115,8 @@ public class GetDetails
 		   
 		     t.commit();
 		     session.close();
-		return null;
-	}
-	
-	public static Classs getAllData()
-	{
-		
-		
-		
-		return null;
+		     
+		     return null;
 	}
 
 

@@ -66,8 +66,8 @@
 		<br>
 		
 		<button style="position:relative; margin-left:40%;" class="GFG">
-			<a style="text-decoration: none" href="getAllData.jsp" /a> Get
-				All Teachers 
+			<a style="text-decoration: none" href="getAllDatas.jsp" /a> Get
+				All Data 
 		</button>
 		
 
