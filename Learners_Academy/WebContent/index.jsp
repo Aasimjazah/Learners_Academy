@@ -73,7 +73,7 @@
 	</div>
 	
 	<div style="margin-left: 27%; border: 3px solid black; width: 50%; margin-top: 10%; border-radius: 5px;">
-		<h1 style="margin-left: 10%">Delete data</h1>
+		<h1 style="margin-left: 10%">Delete Records Panel</h1>
 
 		<button class="GFG">
 			<a style="text-decoration: none" href="deleteStudent.jsp" /a>
@@ -87,7 +87,7 @@
 
 
 		<button class="GFG">
-			<a style="text-decoration: none" href="deleteTeacher.jsp" /a> Set
+			<a style="text-decoration: none" href="deleteTeacher.jsp" /a>
 				Delete Teacher 
 		</button>
 

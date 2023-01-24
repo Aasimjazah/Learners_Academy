@@ -46,5 +46,22 @@ public class DeleteDetails
 	          session.close();
 	      return 1;
 	}
-
+	public static int deleteTeacher(String name)
+	{
+		SessionFactory sessionFactory = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
+	      Session session = sessionFactory.openSession();
+	      
+	      Transaction t = session.beginTransaction(); 
+	     Query  q =    session.createQuery("delete from Teacher s where s.teacherName = :e");
+	     q.setParameter("e", name );
+           
+	          int i=q.executeUpdate();
+	          
+	          System.out.println("Record(s) Deleted.");
+	          
+	          t.commit();
+	          session.clear();
+	          session.close();
+	      return 1;
+	}
 }
