@@ -17,7 +17,7 @@
 }
 </style>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Learners Academy</title>
 </head>
 <body bgcolor="#E7BFB7">
 

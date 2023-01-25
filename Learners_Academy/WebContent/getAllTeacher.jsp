@@ -44,7 +44,9 @@ int count=1;
   </tr>
   <%
   count++;
+ 
   }
+  count=1;
   %>
 </table>
 </div>
