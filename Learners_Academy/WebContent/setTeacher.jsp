@@ -19,7 +19,7 @@
 					<td><label style="font-size: 30px" for="name"> Teacher
 							Name </label></td>
 					<td><input style="height: 30px; font-size: 14pt;" type="text"
-						name="name" /></td>
+						name="name" required/></td>
 				</tr>
 
 				<tr>
